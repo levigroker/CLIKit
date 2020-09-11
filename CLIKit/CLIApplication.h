@@ -157,7 +157,7 @@
  *
  * @param string The string to write to standard error.
  */
-- (void)writeStdErrorString:(NSString *)string;
+- (void)writeToStandardError:(NSString *)string;
 
 /**
  * Write a given string to stdout.

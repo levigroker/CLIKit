@@ -21,12 +21,12 @@
 
 @implementation CLIApplicationOptionParserDelegate
 
-@synthesize application;
+@synthesize application = _application;
 
 - (instancetype)initWithApplication: (CLIApplication*)theApplication {
     if (self = [super init]) {
-        application = theApplication;
-        remainingArguments = @[];
+        _application = theApplication;
+        _remainingArguments = @[];
         return self;
     }
     
